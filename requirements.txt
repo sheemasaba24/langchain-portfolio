@@ -1,0 +1,14 @@
+langchain
+langchain-groq
+langchain-community
+langchain-huggingface
+langchain-text-splitters
+faiss-cpu
+pypdf
+sentence-transformers
+streamlit
+python-dotenv
+sqlalchemy
+tavily-python
+langgraph
+pandas
