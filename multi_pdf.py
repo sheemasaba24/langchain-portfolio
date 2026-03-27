@@ -37,14 +37,13 @@ if "vectorstore" not in st.session_state:
 if "processed_files" not in st.session_state:
     st.session_state.processed_files = []
 
-# Sidebar
-with st.sidebar:
-    st.header("📂 Upload PDFs")
-    uploaded_files = st.file_uploader(
-        "Upload one or more PDFs",
-        type="pdf",
-        accept_multiple_files=True
-    )
+# Upload section on main page
+st.header("📂 Upload PDFs")
+uploaded_files = st.file_uploader(
+    "Upload one or more PDFs",
+    type="pdf",
+    accept_multiple_files=True
+)
 
     if uploaded_files:
         if st.button("⚡ Process All PDFs"):
